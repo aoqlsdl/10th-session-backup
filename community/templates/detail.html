@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posting-Detail</title>
+    <link rel="stylesheet" href="static/detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>{{ post.title }}</h1>
+        <br>
+        <span>{{ post.upload_time }}</span>
+        <div class="content">{{ post.content }}</div>
+    </div>
+</body>
+</html>
+
